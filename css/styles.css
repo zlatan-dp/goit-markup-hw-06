@@ -586,8 +586,8 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-adress {
-  width: 230px;
+.footer-contacts {
+  width: 231px;
 }
 
 .footer-item:not(:last-child) {
@@ -712,6 +712,11 @@ img {
   align-items: center;
   padding: 10px 28px;
   margin-left: 12px;
+}
+
+.action-btn:hover,
+.action-btn:focus {
+  background-color: #188ce8;
 }
 
 .action-input-icon {
@@ -887,8 +892,9 @@ img {
   border: solid 2px var(--main-color);
   border-radius: 2px;
   margin-right: 8px;
-  /* transition: border-color var(--trans-dur) var(--trans-timing-function),
-    background-color var(--trans-dur) var(--trans-timing-function); */
+
+  transition: border-color var(--trans-dur) var(--trans-timing-function),
+    background-color var(--trans-dur) var(--trans-timing-function);
 }
 
 .modal-input-policy:checked + .modal-label-policy::before {
@@ -901,6 +907,18 @@ img {
 
 .modal-input-policy:focus + .modal-label-policy::before {
   border-color: var(--accent-color);
+}
+
+.modal-input-policy:active + .modal-label-policy::before {
+  border-color: var(--accent-color);
+}
+
+.modal-input-policy:checked + .modal-label-policy::before {
+  border: none;
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .policy-link {
